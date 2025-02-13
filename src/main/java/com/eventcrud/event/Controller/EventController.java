@@ -10,8 +10,6 @@ import com.eventcrud.event.Model.MailEvent;
 public class EventController {
 	@PostMapping("/event")
 	public String addEvent(@RequestBody MailEvent event) {
-		event.sendMail();
-		
 		return "inserted";
 	}
 }
